@@ -37,16 +37,14 @@ function setNewsPageData(data) {
     console.log(data);
     
         let h2 = document.createElement('h2') ;
-        h2.innerHTML = data.titular;
+        h2.innerHTML = data.titular ;
         document.getElementById('title').appendChild(h2);
 
-        let br = document.createElement('br') ;
         let b  = document.createElement('b') ;
-        b.innerHTML = data.newsCopete
-        br.appendChild(b);    
-        document.getElementById('copete').appendChild(br);
+        b.innerHTML = data.copete; 
+        document.getElementById('copete').appendChild(b);
 
-        let p = document.createElement('p')
+        let p = document.createElement('p');
         p.innerHTML = data.cuerpo;
         document.getElementById('cuerpo').appendChild(p);
 
