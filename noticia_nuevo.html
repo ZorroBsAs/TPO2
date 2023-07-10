@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" contenido="IE=edge">
+    <meta name="viewport" contenido="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <link rel="icon" type="image/ico" href="../static/img/icono.ico" />
+    <link rel="stylesheet" href="../static/css/navbar.css">
+    <link rel="stylesheet" href="../static/css/noticias-cards.css">
+
+</head>
+
+<body>
+
+
+    <input type="checkbox" id="toggle" name="toggle">
+
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="formulario.html">Contacto</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="objetivos.html">Objetivos</a></li>
+        <li><a href="crud.html">CRUD Noticias</a></li>
+    </ul>
+
+    <div class="navbar" style="padding-left: 20px;">
+        <div class="logo">
+            <a href="index.html"><img src="../static/img/logo.png" alt="" style="width: 80px; "></a>
+        </div>
+        <label for="toggle">Menú</label>
+    </div>
+
+
+    <section class="contenido">
+        <div class="carditos">
+            <div class="card-header">
+                <div class="text-header">Nuevo</div>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="id">ID</label>
+                        <input type="number" class="form-control" name="id" id="id" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="titular">Titular</label>
+                        <input required="" class="form-control" name="titular" id="titular" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="autor">Autor</label>
+                        <input required="" class="form-control" name="autor" id="autor" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha">Fecha</label>
+                        <input required="" class="form-control" name="fecha" id="fecha" type="date">
+                    </div>
+                    <div class="form-group">
+                        <label for="copete">Copete</label>
+                        <textarea required class="form-control" id="copete" name="copete" rows="4" cols="50"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="cuerpo">Cuerpo</label>
+                        <textarea required class="form-control" id="cuerpo" name="cuerpo" rows="15"
+                            cols="50"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="imagen">URL imagen</label>
+                        <input required="" class="form-control" name="imagen" id="imagen" type="url">
+                    </div>
+
+                    <button class="btn" type="button" onclick="guardar()">Crear</button>
+                    <a href="crud.html" class="btn" role="button">Cancelar</a>
+                    <!-- <button class="btn" type="button" href="crud.html">Cancelar</a> -->
+                    <!-- <button class="btn" type="button" onclick="">Cancelar</button> -->
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="../static/js/noticia_nuevo.js"></script>
+
+</body>
+
+</html>

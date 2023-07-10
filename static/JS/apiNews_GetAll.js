@@ -24,7 +24,7 @@ function setNewsData(data) {
         let li = document.createElement('li');
         let a = document.createElement('a');
         a.setAttribute('target', '_blank');
-        a.setAttribute('href', 'noticiaGetOne.html?' + article.id);
+        a.setAttribute('href', 'noticia_GetOne.html?' + article.id);
        // a.setAttribute('onclick','apiNews_GetOne('+article.id+')');
        // a.setAttribute('value', article.id);
         a.textContent = article.titular;
